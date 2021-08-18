@@ -2,7 +2,7 @@
 
 namespace Pipopolam.MegaArchitecture.Configuration
 {
-    [AttributeUsage(AttributeTargets.Class, AllowMultiple = true, Inherited = false)]
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
     public class ResolverContainerAttribute : Attribute
     {
         public Type Type { get; }

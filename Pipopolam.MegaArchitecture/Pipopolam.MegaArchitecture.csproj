@@ -11,6 +11,7 @@
     <None Remove="Configuration\" />
     <None Remove="Services\" />
     <None Remove="Mathematics\" />
+    <None Remove="Microsoft.CodeAnalysis.CSharp.Workspaces" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Unity" Version="5.11.10" />
@@ -20,5 +21,10 @@
     <Folder Include="Configuration\" />
     <Folder Include="Services\" />
     <Folder Include="Mathematics\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pipopolam.MegaArchitecture.Generator\Pipopolam.MegaArchitecture.Generator.csproj"
+                      ReferenceOutputAssembly="false"
+                      OutputItemType="Analyzer"/>
   </ItemGroup>
 </Project>

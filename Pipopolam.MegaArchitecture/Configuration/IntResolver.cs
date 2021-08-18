@@ -16,12 +16,12 @@ namespace Pipopolam.MegaArchitecture.Configuration
 
         public IMember ResolveMember(object value)
         {
-            return Container.Resolve<IIntMember>(new PropertyOverride("Value", value));
+            return Container.Resolve<IIntMember>(new PropertyOverride("Value", value), new DependencyOverride<IResolver>(this));
         }
 
         public IResult ResolveResult(object result)
         {
-            return Container.Resolve<IIntResult>(new PropertyOverride("Value", result));
+            return Container.Resolve<IIntResult>(new PropertyOverride("Value", result), new DependencyOverride<IResolver>(this));
         }
 
         public ISummator ResolveSummator(IMember left, IMember right)

@@ -7,8 +7,18 @@
 
   <ItemGroup>
     <None Remove="Unity" />
+    <None Remove="Common\" />
+    <None Remove="Configuration\" />
+    <None Remove="Services\" />
+    <None Remove="Mathematics\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Unity" Version="5.11.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Configuration\" />
+    <Folder Include="Services\" />
+    <Folder Include="Mathematics\" />
   </ItemGroup>
 </Project>
